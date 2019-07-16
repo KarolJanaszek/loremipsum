@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>loremipsum</title>
+</head>
+<body>
+<!---
+Action: Co ma się stać jak kliknie się w przycisk. Do jakiego żądania ma przejść.
+--->
+<form action="/result">
+    <h2>Lorem Ipsum - generator</h2>
+    <label>Podaj ilość</label>
+    <!---
+    name=number jest odpowiednikeim nazwania zmiennej w HTML
+    type=number oznacza typ
+    --->
+    <input type="number" name="number">
+    <br><br>
+    <label>Co chcesz generować?</label>
+    <br>
+    <select name="option">
+        <option value="words">Słowa</option>
+        <option value="sentences">Zdania</option>
+        <option value="paragraphs">Paragrafy</option>
+    </select>
+    <!---
+    <select name="option"> - przypisujemy zmienną opcion aby nią manipulować
+    na serwer wysyłamy words a odbiorca widzi Słowa.
+    --->
+    <br>
+    <input type="submit" value="Generuj">
+</form>
+</body>
+</html>
